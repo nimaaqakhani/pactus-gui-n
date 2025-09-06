@@ -12,7 +12,7 @@ import 'package:pactus_gui/src/features/main/language/core/localization_extensio
 import 'package:pactus_gui/src/features/main/navigation_pan_cubit/presentation/cubits/navigation_pan_cubit.dart';
 import 'package:pactus_gui/src/features/node_logs/presentation/screens/node_logs_screen.dart';
 import 'package:pactus_gui/src/features/settings/presentation/screens/settings_screen.dart';
-import 'package:pactus_gui/src/features/transactions/presentation/screens/transactions_screen.dart';
+import 'package:pactus_gui/src/features/transactions/presentation/pages/transactions_page.dart';
 import 'package:pactus_gui/src/features/wallet/presentation/screens/wallet_screen.dart';
 import 'package:pactus_gui_widgetbook/app_styles.dart'
     show AppTheme, PanePallet;
