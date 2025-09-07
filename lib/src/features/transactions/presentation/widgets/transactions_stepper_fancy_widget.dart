@@ -33,8 +33,8 @@ class TransactionsStepperFancyWidget extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
-                  width: 40,
-                  height: 40,
+                  width: 32,
+                  height: 32,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
@@ -42,8 +42,8 @@ class TransactionsStepperFancyWidget extends StatelessWidget {
                     border: Border.all(color: borderColor, width: 2),
                   ),
                   child: SizedBox(
-                    width: 20,
-                    height: 20,
+                    width: 16,
+                    height: 16,
                     child: steps[stepIndex].iconBuilder(iconColor),
                   ),
                 ),
@@ -61,7 +61,6 @@ class TransactionsStepperFancyWidget extends StatelessWidget {
           } else {
             return Expanded(
               child: CustomPaint(
-                size: const Size(double.infinity, 2),
                 painter: DottedLinePainter(),
               ),
             );

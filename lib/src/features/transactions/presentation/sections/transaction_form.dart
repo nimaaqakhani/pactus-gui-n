@@ -85,29 +85,23 @@ class TransactionForm extends StatelessWidget {
             ),
             TransactionsLabeledRowWidget(
               label: context.tr(LocaleKeys.amount),
-              requiredMark: true,
-              child: SizedBox(
-                height: 32,
-                child: TransactionsAmountSectionWidget(
-                  amount: state.amount,
-                  available: state.available,
-                  onChanged: cubit.changeAmount,
-                  blue: accent,
-                  muted: paneTheme.disableColor!,
-                  decor: baseDecoration,
-                  onMaxPressed: () {},
-                ),
+              child: TransactionsAmountSectionWidget(
+                amount: state.amount,
+                available: state.available,
+                onChanged: cubit.changeAmount,
+                blue: accent,
+                muted: paneTheme.disableColor!,
+                decor: baseDecoration,
+                onMaxPressed: () {},
               ),
             ),
+
             TransactionsLabeledRowWidget(
               label: context.tr(LocaleKeys.fee),
-              child: SizedBox(
-                height: 32,
-                child: TransactionsFeeSectionWidget(
-                  fee: state.fee,
-                  muted: paneTheme.disableColor!,
-                  decor: baseDecoration,
-                ),
+              child: TransactionsFeeSectionWidget(
+                fee: state.fee,
+                muted: paneTheme.disableColor!,
+                decor: baseDecoration,
               ),
             ),
           ],

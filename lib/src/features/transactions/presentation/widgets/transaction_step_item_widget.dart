@@ -14,7 +14,7 @@ class DottedLinePainter extends CustomPainter {
       ..color = Colors.grey.shade400
       ..strokeWidth = 2;
 
-    const dashWidth = 3.0;
+    const dashWidth = 2.0;
     const dashSpace = 3.0;
 
     final startX = 0.0;
